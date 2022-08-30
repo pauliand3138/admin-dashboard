@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    font-family: 'Roboto';
+}
+
+.sidebar {
+    background-color: rgb(25,146,212);
+    height: 100vh;
+    padding: 1.5em;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: min-content;
+    cursor: pointer;
+}
+
+.sidebar-logo .tab{
+    gap: 10px;
+}
+
+.sidebar-main-tabs .tab, .sidebar-secondary-tabs .tab {
+    gap: 15px;
+}
+
+.sidebar-dashboard-tab {
+    font-size: 1.7em;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar-main-tabs, .sidebar-secondary-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0.5em;
+    padding-top: 3em;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+
+.tabs-icon {
+    width: 1.8em;
+}
