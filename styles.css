@@ -14,9 +14,10 @@ body {
     background-color: rgb(25,146,212);
     height: 100vh;
     padding: 1.5em;
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.29);
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.29);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    z-index: 2;
 }
 
 .tab {
@@ -54,4 +55,20 @@ body {
 
 .tabs-icon {
     width: 1.8em;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    z-index: 1;
+}
+
+.body-content {
+    background-color: #E2E8F0;
 }
