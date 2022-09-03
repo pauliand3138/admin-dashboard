@@ -109,12 +109,15 @@ body {
     gap: 2em;
 }
 
-.profile-picture-small {
-    width: 50px;
+.profile-picture {
     border-radius: 50%;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+}
+
+.profile-picture-small {
+    width: 50px;
 }
 
 .profile-name-small {
