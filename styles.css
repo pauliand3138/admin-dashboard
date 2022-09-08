@@ -151,4 +151,43 @@ body {
     border-radius: 10cm;
     font-size: 0.95em;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.body-content {
+    display: grid;
+    grid-template-columns: 7.5fr 2.5fr;
+    padding: 2em 1.5em;
+}
+
+.body-title {
+    font-weight: bold;
+    padding-bottom: 0.8em;
+    font-size: 1.2em;
+}
+
+.announcement-contents {
+    background-color: white;
+    padding: 1.5em 2em;
+    margin-bottom: 2em;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+}
+
+.announcement-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    padding: 1em 0 1em;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+
+.announcement-desc {
+    font-size: 0.9em;
+    color: #636363;
 }
