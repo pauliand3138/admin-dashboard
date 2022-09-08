@@ -8,10 +8,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     font-family: 'Roboto';
+    height: 100%;
 }
 
 .sidebar {
-    height: 100vh;
+    grid-column-start: 1;
+    position: fixed;
+    width: 20%;
+    top: 0;
+    left: 0;
+    bottom: 0;
     background-color: rgb(25,146,212);
     padding: 1.5em;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
@@ -58,6 +64,7 @@ body {
 }
 
 .main-content {
+    grid-column-start: 2;
     display: grid;
     grid-template-rows: 1fr 5fr;
     height: 100vh;
