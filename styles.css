@@ -11,8 +11,8 @@ body {
 }
 
 .sidebar {
-    background-color: rgb(25,146,212);
     height: 100vh;
+    background-color: rgb(25,146,212);
     padding: 1.5em;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
@@ -166,7 +166,7 @@ body {
     font-size: 1.2em;
 }
 
-.announcement-contents {
+.announcement-contents, .trending-contents {
     background-color: white;
     padding: 1.5em 2em;
     margin-bottom: 2em;
@@ -194,4 +194,9 @@ body {
 .announcement-desc {
     font-size: 0.9em;
     color: #636363;
+}
+
+.trending-card {
+    display: flex;
+    gap: 1em;
 }
