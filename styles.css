@@ -176,6 +176,10 @@ body {
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
 }
 
+.announcement-contents hr {
+    border: 0.5px solid #D2D2D2;
+}
+
 .announcement-card {
     display: flex;
     flex-direction: column;
