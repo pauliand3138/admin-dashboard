@@ -8,6 +8,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     font-family: 'Roboto';
+    background-color: #E2E8F0;
 }
 
 .sidebar {
@@ -71,6 +72,7 @@ body {
     position: fixed;
     grid-row-start: 1;
     width: 80%;
+    height: 17.667%;
     top: 0;
     padding: 0 2.5em 1.5em;
     background-color: white;
@@ -90,10 +92,6 @@ body {
     padding: 0.5em;
     border-radius: 15px;
     width: 40vw;
-}
-
-.body-content {
-    background-color: #E2E8F0;
 }
 
 .search-input-profile-notification, .greeting-button-bar {
@@ -166,7 +164,8 @@ body {
     grid-row-start: 2;
     display: grid;
     grid-template-columns: 7.5fr 2.5fr;
-    padding: 2em 1.5em;
+    padding: 1.5em;
+    background-color: #E2E8F0;
 }
 
 .body-title {
@@ -205,7 +204,24 @@ body {
     color: #636363;
 }
 
+.trending-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
 .trending-card {
     display: flex;
     gap: 1em;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.user-desc {
+    color: #676767;
 }
