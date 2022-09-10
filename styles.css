@@ -18,7 +18,7 @@ body {
     left: 0;
     bottom: 0;
     background-color: rgb(25,146,212);
-    padding: 1.5em;
+    padding: 1.5em 1.5em 1.5em 1.0em;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
@@ -29,8 +29,16 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: min-content;
+    padding: 0.5em 0 0.5em 0.5em;
+    border-radius: 15px;
     cursor: pointer;
+    transition: background-color 100ms linear;
+}
+
+.tab:hover {
+    background-color: #0075B4;
+    transform: scale(1.05);
+    
 }
 
 .sidebar-logo .tab{
@@ -50,7 +58,6 @@ body {
 .sidebar-main-tabs, .sidebar-secondary-tabs {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     padding-left: 0.5em;
     padding-top: 3em;
     font-size: 1.2em;
@@ -225,7 +232,7 @@ body {
 }
 
 .project-action:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .announcement-contents, .trending-contents {
