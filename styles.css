@@ -72,7 +72,7 @@ body {
     position: fixed;
     grid-row-start: 1;
     width: 80%;
-    height: 17.667%;
+    height: min-content;
     top: 0;
     padding: 0 2.5em 1.5em;
     background-color: white;
