@@ -183,7 +183,7 @@ body {
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-rows: 240px;
     gap: 2em;
     padding-right: 1.5em;
@@ -287,7 +287,7 @@ body {
     color: #676767;
 }
 
-@media screen and (max-width: 1486px) {
+@media screen and (max-width: 1319px) {
     .body-content {
         margin-top: -8em;
     }
