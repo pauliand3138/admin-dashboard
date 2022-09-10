@@ -279,3 +279,9 @@ body {
 .user-desc {
     color: #676767;
 }
+
+@media screen and (max-width: 1486px) {
+    .body-content {
+        margin-top: -8em;
+    }
+}
