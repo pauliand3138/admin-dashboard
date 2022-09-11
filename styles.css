@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -88,7 +90,11 @@ body {
 }
 
 .search-icon, .notification-icon {
-    width: 25px;
+    width: 30px;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
 }
 
 .header-input {
@@ -164,6 +170,12 @@ body {
     font-size: 0.95em;
     font-weight: bold;
     cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.header-button:hover {
+    background-color: #0075B4;
+    transform: scale(1.05);
 }
 
 .body-content {
@@ -187,7 +199,6 @@ body {
     grid-auto-rows: 240px;
     gap: 2em;
     padding-right: 1.5em;
-    
 }
 
 .project-card {
@@ -200,6 +211,8 @@ body {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     padding: 2em 1.5em;
+    animation-name: slideUp;
+    animation-duration: 2s;
 }
 
 .project-info {
@@ -226,13 +239,16 @@ body {
 }
 
 .project-action {
-    width: 25px;
+    width: 30px;
     cursor: pointer;
+    padding: 0.2em;
     transition: transform .2s ease-in-out;
+    border-radius: 50%;
 }
 
-.project-action:hover {
+.project-action:hover, .notification-icon:hover {
     transform: scale(1.15);
+    background-color: #F1F1F1;
 }
 
 .announcement-contents, .trending-contents {
@@ -243,6 +259,8 @@ body {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    animation-name: slideIn;
+    animation-duration: 1.5s;
 }
 
 .announcement-contents hr {
@@ -254,7 +272,9 @@ body {
     flex-direction: column;
     gap: 0.3em;
     padding: 1em 0 1em;
+    cursor: pointer;
 }
+
 
 .announcement-title {
     font-weight: bold;
@@ -275,6 +295,7 @@ body {
     display: flex;
     gap: 1em;
     align-items: center;
+    cursor: pointer;
 }
 
 .user-info {
@@ -287,6 +308,82 @@ body {
     color: #676767;
 }
 
+.copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    position: fixed;
+    left: 2vw;
+    bottom: .5em;
+    z-index: 2;
+}
+
+.copyright-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color:  white;
+}
+
+.author-name {
+    text-decoration: underline 0.1em rgba(87, 110, 224, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.author-name:hover {
+    text-decoration-color: white;
+}
+
+.github-icon {
+    width: 2vw;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.github-icon:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        margin-top: 100%;
+        height: 100%;
+    }
+
+    to {
+        margin-top: 0%;
+        height: 100%;
+    }
+}
 @media screen and (max-width: 1319px) {
     .body-content {
         margin-top: -8em;
